@@ -1,0 +1,266 @@
+.login-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  .welcome-section {
+    width: 42%;
+    background-color: #06213e;
+    padding: 163px 20px 0;
+    text-align: center;
+    position: relative;
+    background-image: url("../../../public/images/rectangles.png");
+    background-size: 150%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    h2 {
+      color: white;
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 34px;
+    }
+    p {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 0.01em;
+      color: rgba(255, 255, 255, 0.8);
+      max-width: 437px;
+      margin: 0 auto;
+    }
+    .logo {
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      width: 52px;
+    }
+    .login-image {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: calc(100% + 65px);
+    }
+  }
+  .ant-input-affix-wrapper {
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    height: fit-content;
+    border-radius: 4px;
+    input {
+      margin-bottom: 0 !important;
+    }
+    &:hover {
+      border-color: #1b68bb;
+    }
+    &.ant-input-affix-wrapper-focused {
+      box-shadow: 0px 0px 0 3px rgba(114, 183, 234, 0.4);
+      border-color: #1b68bb;
+    }
+  }
+  .log-in-section {
+    width: 58%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.reset-pass {
+      width: 100%;
+      p {
+        margin-bottom: 20px;
+      }
+      h2 {
+        margin-bottom: 10px;
+      }
+      > div {
+        max-width: 480px;
+        border-radius: 4px;
+        border: 1px solid #e1e7ec;
+        background: #fff;
+        padding: 40px;
+      }
+    }
+    .email-sent {
+      margin-bottom: 32px;
+    }
+    > div {
+      max-width: 400px;
+    }
+    h2 {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 39px;
+      margin-bottom: 15px;
+      color: #202833;
+    }
+    p {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: 0.01em;
+      margin-bottom: 30px;
+      color: #202833;
+      span {
+        font-weight: 600;
+      }
+    }
+    form {
+      width: 400px;
+      .ant-form-item-control {
+        margin-bottom: 20px;
+      }
+      .ant-form-item-control-input {
+        margin-bottom: 5px;
+      }
+      .ant-form-item-explain-error {
+        // margin-bottom: 15px;
+      }
+      &.reset-pass {
+        .ant-col-8 {
+          padding-bottom: 0;
+        }
+      }
+      .ant-form-item {
+        margin-bottom: 0px;
+      }
+      .ant-input-affix-wrapper {
+        width: 400px;
+      }
+      .ant-form-item-control {
+        margin-left: 0;
+        width: 400px;
+      }
+      .ant-form-item-label {
+        overflow: visible;
+        padding-bottom: 0;
+        label {
+          min-width: 300px;
+        }
+        .ant-form-item-required {
+          &::before {
+            display: none;
+          }
+        }
+      }
+      .submit {
+        background: #1b68bb;
+        &:hover {
+          background: #1350a0;
+          box-shadow: none;
+        }
+        span {
+          font-size: 14px;
+          line-height: 23px;
+          color: white;
+          letter-spacing: 0.01em;
+        }
+        padding-top: 8px;
+        padding-bottom: 8px;
+        width: 400px;
+        text-transform: capitalize;
+        box-shadow: none;
+        height: auto;
+        border-radius: 4px;
+        display: block;
+        text-align: center;
+        font-weight: 400;
+      }
+      label {
+        margin-bottom: 5px;
+        display: block;
+        width: fit-content;
+      }
+      label,
+      input {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.01em;
+        color: #202833;
+      }
+      .forget-pass {
+        color: #202833;
+        display: block;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        margin-left: auto;
+        letter-spacing: 0.01em;
+        margin-bottom: 25px;
+        text-transform: capitalize;
+        height: auto;
+        text-align: right;
+        margin-top: -15px;
+        &:hover {
+          color: #1b68bb;
+        }
+      }
+      .password-intensity {
+        width: 100%;
+        display: flex;
+        gap: 6px;
+        flex-direction: column;
+        margin-top: 10px;
+        p {
+          margin-bottom: 0;
+        }
+        .bars {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 10px;
+          width: 100%;
+          .bar {
+            background-color: #dadada;
+            height: 6px;
+          }
+        }
+        .text {
+          color: #ee4d55;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 18px;
+          letter-spacing: 0.14px;
+        }
+        margin-bottom: 10px;
+      }
+      .password-instructions {
+        margin-bottom: 30px;
+        p {
+          color: #202833;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 18px;
+          letter-spacing: 0.13px;
+          margin-bottom: 6px;
+        }
+        ul {
+          margin-left: 19px;
+        }
+        li {
+          color: #202833;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 18px;
+          letter-spacing: 0.13px;
+        }
+      }
+      input {
+        margin-bottom: 0px;
+        padding: 12px 15px;
+        border-color: #ccd4db;
+        border-radius: 4px;
+        width: 400px;
+        &::placeholder {
+          color: #929fb1 !important;
+        }
+        &:focus {
+          box-shadow: 0px 0px 0 3px rgba(114, 183, 234, 0.4);
+          border-color: #1b68bb;
+        }
+        &:hover {
+          border-color: #1b68bb;
+        }
+      }
+    }
+  }
+}

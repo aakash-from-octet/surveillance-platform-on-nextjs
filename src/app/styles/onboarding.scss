@@ -1,0 +1,70 @@
+.onboarding  {
+    text-align: center;
+    padding: 60px 0;
+    min-height: calc(100vh - 65px);
+    position: relative;
+    overflow-y: hidden !important;
+    .page-title {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #404B5A;
+        margin-bottom: 40px;
+    }
+    .onboarding-item {
+        width: 872px;
+        max-width: 100%;
+        border: 1px solid #E1E7EC;
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .task {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            text-align: left;
+            .task-title {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: 0.01em;
+                color: #202833;
+                margin-bottom: 8px;
+            }
+            .des {
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 16px;
+                color: #404B5A;
+            }
+        }
+        button {
+            min-width: 135px;
+            text-transform: capitalize;
+        }
+    }
+    .on-boarding-asset {
+        position: absolute;
+        bottom: -44px;
+        left: 6%;
+        z-index: -1;
+    }
+    .on-boarding-asset-2 {
+        position: absolute;
+        top: 44px;
+        right: 0;
+    }
+    .on-boarding-asset-3 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}

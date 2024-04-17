@@ -1,0 +1,15 @@
+.dropzone {
+    width: 300px;
+    height: 200px;
+    border: 2px dashed #ccc;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .dropzone.active {
+    background-color: #f7f7f7;
+  }
+  
